@@ -1,0 +1,490 @@
+:root {
+    --primary: #002160;
+    --secondary: rgba(0, 33, 96, 0.75);
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--primary);
+}
+
+nav {
+    width: 98%;
+    margin-left: 1%;
+    z-index: 9999;
+    font: 600 1.2rem Arial, Helvetica, sans-serif;
+}
+
+/* Jumbotron / Banner Image */
+.jumbotron {
+    background: linear-gradient(110.5deg, rgba(0, 33, 96, 0.86) 21.53%, rgba(0, 44, 130, 0.84) 41.48%, rgba(0, 33, 96, 0.68) 91.54%);
+    height: 100vh;
+}
+
+.jumbotron h1 {
+    top: 24vh;
+    left: 6vw;
+    font: 900 3.5rem 'Tourney', cursive;
+    line-height: 73px;
+}
+
+.jumbotron h2 {
+    top: 40vh;
+    left: 6vw;
+    font: 600 2.2rem Arial, Helvetica, sans-serif;
+}
+
+.jumbotron p {
+    width: 370px;
+    top: 53vh;
+    left: 6vw;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.jumbotron hr {
+    width: 200px;
+    left: 6vw;
+    top: 68vh;
+    border: 4px solid rgb(255, 255, 255);
+}
+
+.jumbotron .banner-img {
+    left: 40vw;
+    top: 23vh;
+    width: 752px;
+    height: 360px;
+}
+
+.jumbotron .kunjungi {
+    width: 10vw;
+    color: var(--primary);
+    top: 80vh;
+    left: 6vw;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* End Jumbotron / Banner Image */
+
+/* About Irma */
+.sejarah {
+    height: 210vh;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../img/ikhwan.png');
+    background-attachment: fixed;
+
+    .circle-left {
+        background-color: var(--primary);
+        width: 45vw;
+        height: 100vh;
+        left: 0;
+        border-radius: 0 1000px 1000px 0;
+        box-sizing: border-box;
+        padding-left: 35px;
+    }
+
+    .circle-left h1 {
+        font: 700 2rem 'Tourney', cursive;
+        margin-top: 200px;
+    }
+
+    .circle-left p {
+        font: 400 1.4rem Arial, Helvetica, sans-serif;
+        width: 35vw;
+        margin-top: 55px;
+        text-align: left;
+        line-height: 35px;
+    }
+
+    .circle-right {
+        background-color: var(--primary);
+        top: 110vh;
+        right: 0;
+        width: 45vw;
+        height: 100vh;
+        border-radius: 1000px 0 0 1000px;
+        box-sizing: border-box;
+        padding-left: 115px;
+    }
+
+    .circle-right h1 {
+        font: 700 2rem 'Tourney', cursive;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    .circle-right p {
+        font: 400 1.4rem Arial, Helvetica, sans-serif;
+        width: 33vw;
+        margin-top: 55px;
+        text-align: right;
+        line-height: 35px;
+    }
+} 
+/* End About Irma */
+
+/* Bidang-Bidang */
+.department {
+    height: 100vh;
+    padding-top: 70px;
+
+    .judul {
+        color: var(--primary);
+        font: 900 2.2rem 'Tourney', cursive;
+        margin-left: 100px;
+    }
+    
+    .line {
+        border: 4px solid #002160;
+        width: 30vw;
+        margin-top: -2px;
+        margin-left: 100px;
+    }
+    
+    .cards {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    
+    .card {
+        width: 340px;
+        height: 400px;
+        box-shadow: 0px 1px 5px -3px var(--primary);
+        border-radius: 20px;
+    }
+
+    .card h5 {
+        color: var(--primary);
+        margin: auto;
+        margin-top: 5px;
+        text-align: center;
+        width: 60%;
+        font: 400 1.2rem Arial, Helvetica, sans-serif;
+    }
+
+    .card p {
+        margin: auto;
+        margin-top: -20px;
+        text-align: center;
+        width: 80%;
+        font: 400 1rem/25px Arial, Helvetica, sans-serif;
+    }
+
+    .detail-bidang {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--secondary);
+        display: none;
+        top: 0px;
+    }
+
+    .detail-bidang a {
+        font-weight: 500;
+        text-align: center;
+        border: 2px solid white;
+        position: relative;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card:hover .detail-bidang {
+        display: block;
+        top: 0;
+        transition: all 0.5 ease-out;
+        border-radius: 20px;
+    }
+
+}
+/* End Bidang-Bidang */
+
+/* Program Kerja */
+.proker {
+    height: 120vh;
+    padding-top: 70px;
+
+    .judul {
+        color: var(--primary);
+        font: 900 2.2rem 'Tourney', cursive;
+        margin-left: 100px;
+    }
+
+    .line {
+        border: 4px solid #002160;
+        width: 30vw;
+        margin-top: -2px;
+        margin-left: 100px;
+    }
+    
+    .link-pro {
+        background-color: #eee;
+    }
+
+    .link-pro a {
+        width: 100%;
+        text-align: center;
+        font: 900 1.2rem 'Tourney', cursive;
+    }
+
+    .link-pro:hover {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    #konten {
+        background-color:var(--primary);
+        margin-top: 25px;
+        padding: 70px;
+        height: 70%;
+        width: 100%;
+    }
+
+    .konten-proker {
+        display: flex;
+    }
+
+    .image-konten {
+        margin-left: 55px;
+        border: 3px solid #fff;
+        border-radius: 15px 50px 15px 40px;
+        width: 380px ;
+        height: 280px;
+    }
+
+    .desc-konten {
+        margin-left: 80px;
+    }
+
+    .desc-konten h1 {
+        font: 900 2.5rem 'Tourney', cursive;
+    }
+
+    .desc-konten p {
+        font: 300 1.2rem/30px Arial, Helvetica, sans-serif;
+        text-align: justify;
+    }
+
+    .lihat-galeri {
+        color: var(--primary);
+        font: 700 1.1rem Arial, Helvetica, sans-serif;
+        margin-left: -330px;
+    }
+}
+/* End Program Kerja */
+
+/* Detail Departemen Dakwah & Pendidikan Islam */
+.detail-department {
+    height: 200vh;
+    padding-top: 100px;
+
+    /* .judul {
+        background-color: pink;
+        color: var(--primary);
+        font: 900 2.3rem 'Tourney', cursive;
+        text-align: right;
+        margin-right: 70px;
+
+    } */
+    
+    .line {
+        border: 4px solid #002160;
+        width: 30vw;
+        margin-left: 57%;
+    }
+
+    .anggota-irma {
+        width: 96%;
+        text-align: justify;
+        margin-left: 50px;
+        margin-top: 20px;
+        padding: 40px 30px 20px;
+        box-sizing: border-box;
+        font: 700 1.2rem Arial, Helvetica, sans-serif;
+    }
+
+    .anggota-irma ol li {
+        margin-left: 20px;
+        margin-bottom: 8px;
+    }
+
+    img[alt="logo-dakpen"], 
+    img[alt="logo-humas"], 
+    img[alt="logo-phbi"] {
+        display: block;
+        margin: -35px auto -15px;
+    }
+
+    img[alt="logo-dakpen"] ~ p,
+    img[alt="logo-humas"] ~ p,
+    img[alt="logo-phbi"] ~ p{
+        margin-top: 40px;
+        font: 400 1rem/28px Arial, Helvetica, sans-serif;
+        text-align: justify;
+    }
+}
+
+
+/* End Detail Departemen Dakwah & Pendidikan Islam */  
+
+/* Footer */
+footer {
+    background-color: var(--primary);
+    height: 85vh;
+
+    .offset-md-1 {
+        margin-left: 50px;
+    }
+    
+    .col-md-3 {
+        margin-left : 50px;
+    }
+
+    .lh-base {
+        font: 700 1.5rem Arial, Helvetica, sans-serif;
+    }
+ 
+    .copyright {
+        font: 400 1rem Arial, Helvetica, sans-serif;
+        margin-top: -2px;
+        margin-left: 30px;
+    }
+}
+
+
+footer h3 {
+    font: 900 1.6rem Arial, Helvetica, sans-serif;
+}
+
+footer p {
+    line-height: 30px;
+    margin-top: 45px;
+    text-align: justify;
+}
+
+footer hr {
+    margin-top: 60px;
+    width: 100%;
+    border: 1.5px solid #fff;
+    filter: blur(1.5);
+}
+/* End Footer */
+
+/* FAQ */
+.faq {
+    height: 100vh;
+    background-color: #fff;
+
+    .faq h1 {
+        font: 900 3.3rem 'Tourney', cursive;
+    }
+    
+    .box-faq {
+        width: 75%;
+        height: 60px;
+        border-radius: 30px;
+        padding: 18px;
+        margin: 20px auto;
+        border: 3px solid rgba(34, 87, 189, 0.84);
+    }
+    
+    .question {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .answer {
+        width: 100%;
+        color: var(--primary);
+        border: 2px solid rgba(34, 87, 189, 0.84);
+        padding: 10px;
+        display: none;
+        margin-top: 12px;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+    }
+}
+/* End FAQ */
+
+
+/* Anggota */
+.anggota {
+    height: 100%;
+    
+    .background {
+        height: 300px;
+        background-color: rgba(34, 87, 189, 0.1);
+    }
+
+    .rounded-circle {
+        margin-top: 50px;
+    }
+
+    .col-md-5 {
+        margin-top: 30px;
+        margin-left: -70px;
+    }
+
+    .col-md-2 {
+        margin-top: 170px;
+    }
+
+    .background h1 {
+        margin-top: 75px;
+        font: 900 2.2rem 'Tourney', cursive;
+    }
+
+    .background h5 {
+        font: 700 1.5rem Arial, Helvetica, sans-serif;
+    }
+
+    .col-md-2 a i, .col-md-2 span {
+        color: var(--primary) !important; 
+    }
+
+    .motivate {
+        padding: 10px;
+        width: 300px;
+        height: 100px;
+        background-color: rgba(34, 87, 189, 0.75);
+        font: 400 1.2rem/25px Arial, Helvetica, sans-serif;
+        left: 80px;
+    }
+
+    .biodata {
+        margin-top: 120px;
+        width: 420px;
+        height: 150px;
+        padding: 5px;
+        background: rgba(34, 87, 189, 0.1);
+        box-shadow: 1px 1px 4px #002160;
+        border-radius: 10px;
+    }
+
+    .biodata p {
+        text-align: center;
+        font: 700 1.4rem Arial, Helvetica, sans-serif;
+    }
+
+    .col-md-5 h3 {
+        color: rgba(34, 87, 189, 0.84);
+        font: 900 1.8rem 'Tourney', cursive;
+        top: 20px;
+        left: 280px;
+    }
+
+    .accordion {
+        width: 550px;
+        margin-top: 60px;
+        margin-left: 150px;
+    }
+}
+/* End Anggota */

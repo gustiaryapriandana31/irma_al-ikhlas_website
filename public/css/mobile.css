@@ -1,0 +1,305 @@
+
+/* === MEDIA QUERY === */
+@media screen and (max-width: 800px){
+    
+    /* Jumbtoron Banner Image */
+    .jumbotron h1 {
+        top: 10vh;
+        left: 0vw;
+        text-align: center;
+        font: 900 3rem 'Tourney', cursive;
+        line-height: 60px;
+    }
+
+    .jumbotron h2 {
+        top: 30vh;
+        left: 9vw;
+        text-align: center;
+        font: 600 1.7rem Arial, Helvetica, sans-serif;
+    }
+
+    .jumbotron p {
+        width: 300px;
+        top: 70vh;
+        left: 6vw;
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+
+    .jumbotron .banner-img {
+        height: 210px;
+        width: 100%;
+        top: 37vh;
+        left: 0vw;
+    }
+
+    .jumbotron hr {
+        width: 140px;
+        left: 6vw;
+        top: 87vh;
+        border: 4px solid rgb(255, 255, 255);
+    }
+
+    .jumbotron .kunjungi {
+        width: 35vw;
+        color: var(--primary);
+        top: 87vh;
+        left: 55vw;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    /* End Jumbotron Banner Image */
+
+    /* About Irma */
+    .sejarah {
+        height: 115vh;
+        background-color: #fff;
+        background-position: center;
+        background-size: contain;
+        background-image: url('../img/ikhwan.png');
+        background-attachment: fixed;
+
+        .circle-left {
+            margin-top: 10px;
+            margin-left: 14px;
+            width: 90vw;
+            height: 48vh;
+            border-radius: 50%;
+        }
+
+        .circle-left h1 {
+            text-align: center;
+            font: 700 1.4rem/30px 'Tourney', cursive;
+            width: 60vw;
+            margin-left: 20px;
+            margin-top: 70px;
+        }
+
+        .circle-left p {
+            font: 400 1rem/25px Arial, Helvetica, sans-serif;
+            width: 60vw;
+            margin-left: 18px;
+            margin-top: 25px;
+            text-align: center;
+        }
+    
+
+        .circle-right {
+            top: 60vh;
+            margin-right: 10px;
+            width: 90vw;
+            height: 48vh;
+            border-radius: 50%;
+            padding-left: 57px;
+        }
+
+        .circle-right h1 {
+            font: 700 1.4rem/30px 'Tourney', cursive;
+            width: 60vw;
+            margin-top: 70px;
+            text-align: left;
+        }
+    
+        .circle-right p {
+            font: 400 1rem/25px Arial, Helvetica, sans-serif;
+            width: 72vw;
+            margin-left: -20px;
+            margin-top: 25px;
+            text-align: center;
+        }
+    }
+    /* End About Irma */
+
+    /* Bidang-Bidang */
+    .department {
+        height: 110%;
+        padding-top: 50px;
+        padding-bottom: 10px;
+
+        .judul {
+            color: var(--primary);
+            font: 900 1.7rem 'Tourney', cursive;
+            margin-left: 57px;
+        }
+       
+        .line {
+            border: 4px solid #002160;
+            width: 35vw;
+            margin-top: -2px;
+            margin-left: 105px;
+        }
+
+        .cards {
+            margin-left: -2px;
+            display: block;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            width: 337px;
+            height: 400px;
+            box-shadow: 0px 1px 5px -2px var(--primary);
+            border-radius: 20px;
+        }
+    
+    }
+    /* End Bidang-Bidang */
+
+    /* Program Kerja */
+    .proker {
+        padding-top: 50px;
+        margin-bottom: 10px;
+
+        .judul {
+            color: var(--primary);
+            font: 900 1.7rem 'Tourney', cursive;
+            margin-left: 57px;
+        }
+
+        .line {
+            border: 4px solid #002160;
+            width: 35vw;
+            margin-top: -2px;
+            margin-left: 105px;
+        }
+
+        #konten {
+            margin-left: -12px;
+            padding: 10px;
+            /* height: 100%; */
+            width: 100vw;
+        }
+
+        .konten-proker {
+            display: block;
+        }
+
+        .image-konten {
+            margin: 20px;
+            width: 300px ;
+            height: 210px;
+        }
+
+        .desc-konten {
+            margin-left: 5px;
+        }
+
+        
+        .desc-konten h1 {
+            font: 900 1.8rem 'Tourney', cursive;
+            text-align: center;
+        }
+
+        .desc-konten p {
+            margin-left: 5px;
+            width: 95%;
+            font: 300 1.2rem/30px Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        .lihat-galeri {
+            color: var(--primary);
+            font: 700 1.1rem Arial, Helvetica, sans-serif;
+            width: 45%;
+            margin: 30px 100px !important;
+        }
+    }
+    /* End Program Kerja */
+
+    /* Detail Departemen Dakwah & Pendidikan Islam */
+    .detail-department {
+        height: 200vh;
+        padding-top: 50px;
+
+        .judul {
+            color: var(--primary);
+            font: 900 2rem 'Tourney', cursive;
+            text-align: center;
+            margin-right: 0;
+        }
+        
+        .line {
+            border: 4px solid #002160;
+            width: 50vw;
+            margin-bottom: 70px;
+            margin-left: 20%;
+        }
+
+
+        .anggota-irma {
+            width: 96%;
+            text-align: justify;
+            margin-left: 7px;
+            margin-top: 20px;
+            padding: 40px 15px 20px;
+            box-sizing: border-box;
+            font: 700 1.1rem Arial, Helvetica, sans-serif;
+        }
+
+        .anggota-irma ol li {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+    }
+    /* End Detail Departemen Dakwah & Pendidikan Islam */  
+
+    /* Footer */
+    footer {
+        margin-top: 100%;
+        height: 100%;
+
+        .offset-md-1 {
+            margin-left: 0px;
+        }
+
+        .col-md-4 {
+            margin-right: 0px !important;
+        }
+    
+        .col-md-3 {
+            margin-top: 10px !important;
+            margin-left: 0px !important;
+        }
+     
+        .footer-logo {
+            margin-top: 20px !important;
+        }
+
+        .lh-base {
+            margin-top: 50px;
+        }
+
+        .copyright {
+            font: 400 1rem/30px Arial, Helvetica, sans-serif;
+            margin: 10px 0 30px;
+            text-align: center;
+        }
+    }
+        
+    footer h3 {
+        font: 700 1.3rem Arial, Helvetica, sans-serif;
+    }
+
+    footer img {
+        width: 75%;
+        height: 70px;
+    }
+
+    footer p {
+        width: 96%;
+        line-height: 25px;
+        margin: 20px 3px;
+    }
+
+    footer hr {
+        margin: 40px 0px;
+        width: 100%;
+        border: 1.5px solid #fff;
+        filter: blur(1.5);
+    }
+    /* End Footer */
+}
+
+
